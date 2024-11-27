@@ -81,7 +81,7 @@ footer a img {
 .Hero-section {
   position: relative;
 
-  background-image: url("./img/hathhero.jpg");
+  background-image: url("img/hathhero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

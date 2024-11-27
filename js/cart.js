@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
             data-index="${index}"
             style="cursor: pointer"
           >
-            <img src="./img/remove.png" alt="Remove item" />
+            <img src="img/remove.png" alt="Remove item" />
           </div>
         </td>
       `;
