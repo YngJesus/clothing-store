@@ -43,7 +43,7 @@ const products = [
     name: "Vintage 23 beygurl tee",
     price: 92.9,
     currency: "DT",
-    image: "img/t shirts/Vintage 23 beygurl tee.png",
+    image: "img/t shirts/vintage 23 beygurl tee.png",
     type: "best",
     category: "tshirts",
     availability: "inStock",
@@ -147,11 +147,11 @@ function renderProducts(page) {
           />
           <div class="card-body">
             <button class="add-to-cart-btn">
-              <img src="/img/addred.png" alt="" /> Add to Cart
+              <img src="img/addred.png" alt="" /> Add to Cart
             </button>
             <h5 class="card-title">${product.name}</h5>
             <p class="card-text">${product.price} ${product.currency}</p>
-            <img src="/img/heart.png" class="heart-img add-to-wishlist" alt="heart" />
+            <img src="img/heart.png" class="heart-img add-to-wishlist" alt="heart" />
           </div>
         </div>
       `;
@@ -165,8 +165,8 @@ function renderProducts(page) {
 
     heartImg.addEventListener("click", () => {
       heartImg.src = heartImg.src.includes("redheart.png")
-        ? "/img/heart.png"
-        : "/img/redheart.png";
+        ? "img/heart.png"
+        : "img/redheart.png";
     });
 
     // Attach event listeners for cart and wishlist

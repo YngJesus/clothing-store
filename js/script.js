@@ -44,7 +44,7 @@ const products = [
     name: "Vintage 23 beygurl tee",
     price: 92.9,
     currency: "DT",
-    image: "img/t shirts/Vintage 23 beygurl tee.png",
+    image: "img/t shirts/vintage 23 beygurl tee.png",
     type: "best",
     category: "tshirts",
     availability: "inStock",
