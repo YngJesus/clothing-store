@@ -18,8 +18,8 @@ A simple, responsive clothing store website built using HTML, CSS, JavaScript, a
 2. Open index.html in your browser to view the site.
 
 
-Technologies Used
-HTML5
-CSS3
-JavaScript
-Bootstrap
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap
