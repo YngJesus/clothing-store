@@ -1,0 +1,674 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Kavoon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+/* NAVBAR*/
+.nav-underline .nav-link {
+  position: relative;
+}
+
+.nav-underline .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: #8e7054;
+  transition: width 0.3s ease;
+}
+
+.nav-underline .nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-underline .nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: #8e7054 !important;
+}
+.nav-underline .nav-link {
+  padding-bottom: 5px;
+}
+
+.nav-underline .nav-link:hover {
+  color: #8e7054 !important;
+}
+
+/* NAVBAR*/
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+}
+.imgfooter {
+  max-height: 6rem;
+}
+.hrf1 {
+  width: 70px;
+  background-color: #7c4dff;
+  height: 2px;
+}
+
+.sm {
+  font-family: "Khand";
+}
+
+footer a img {
+  height: 20px;
+}
+.copyright {
+  background-color: black;
+}
+.flinks,
+.copyright {
+  color: #7a7a7a;
+  text-decoration: none;
+  font-family: "Roboto";
+}
+/* FOOTER */
+
+/* HOME PAGE -- HERO SECTION */
+.Hero-section {
+  position: relative;
+
+  background-image: url("./img/hathhero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.Hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.Hero-section h1 {
+  position: relative;
+  z-index: 2;
+  font-family: "Kavoon";
+  font-size: 3.2rem;
+}
+.Hero-section p {
+  position: relative;
+  z-index: 2;
+  font-family: "Julius Sans One";
+}
+.Hero-section button {
+  position: relative;
+  z-index: 2;
+  font-family: "Impact";
+  font-size: xx-large;
+  background: none;
+  border: 1px solid white;
+  border-radius: 3rem;
+  color: white;
+  transition: 0.5s ease;
+}
+.Hero-section button:hover {
+  border: 1px solid #8e7054;
+  color: #8e7054;
+}
+/* HOME PAGE -- HERO SECTION */
+
+/* HOME PAGE -- PRODUCT SECTION */
+.img-bg {
+  background-color: #dad2cb;
+}
+
+.card h5 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+}
+.card p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.no-border {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+button img {
+  height: 1rem;
+}
+
+.add-to-cart-btn {
+  border: none;
+  background: none;
+  color: #e53637;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+}
+
+.card .add-to-cart-btn {
+  display: block;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .add-to-cart-btn {
+  opacity: 1;
+  transform: translateY(0);
+  border: none;
+  background: none;
+  color: #e53637;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-btn {
+  background-color: #8e7054;
+  color: white;
+
+  border: 2px solid #8e7054;
+  border-radius: 2.5rem;
+  padding: 0.625rem 1.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.filter-btn:hover {
+  background-color: white;
+  color: #8e7054;
+}
+.filters-btn-home {
+  font-family: "latos", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.card-home {
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 1px 4px #00000033;
+  /* background-color: rgb(197, 190, 188); */
+  font-family: "Arial", sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.card-home:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background: white;
+  cursor: pointer;
+}
+/* NEWSLETTER */
+.newsletter {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.newsletter p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #0056b3;
+}
+/* FEATURED PRODUCT */
+.featured-product {
+  background-color: #f8f9fa;
+}
+
+.featured-product h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+  width: 50%;
+  max-width: 400px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.product-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Nunito", sans-serif;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  color: #6e473b;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  font-family: "Nunito", sans-serif;
+}
+
+.buy-now-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #8e7054;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #6e473b;
+}
+/* CONTACT INFORMATION */
+.contact-info {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.contact-info p:last-child {
+  margin-bottom: 0;
+}
+.tyu img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.tyu img:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+/* HOME PAGE -- PRODUCT SECTION */
+
+/* CONTACT PAGE */
+
+.contactct {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+.rowcn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+/* .cnform {
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+} */
+.cnform h1 {
+  margin-left: 1.1rem;
+  font-size: 4rem;
+  font-family: "Impact";
+  color: black;
+  margin-bottom: 1.5rem;
+}
+.cnform p {
+  font-size: 1.5rem;
+  color: #828282;
+  margin-bottom: 1.5rem;
+}
+.cnform label {
+  color: black;
+  font-weight: medium;
+}
+.cnform button {
+  background-color: black;
+  width: 100%;
+  height: 3rem;
+}
+.cnform input {
+  height: 3rem;
+}
+.cnform ::placeholder {
+  color: #828282 !important; /* Change placeholder text color */
+}
+
+.image-containercn img {
+  margin-left: 4rem;
+  height: 35rem;
+}
+#name,
+#email {
+  width: 125%;
+}
+.namegg {
+  margin-right: 4rem;
+}
+/* CONTACT PAGE */
+
+/* ABOUT PAGE */
+.abct {
+  padding: 1rem;
+  background-color: #f5f3f3;
+}
+.abct img {
+  height: 37.393rem;
+}
+.abct2 h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  color: #111111;
+  font-weight: bold;
+}
+.abct2 p {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.938rem;
+  color: #3d3d3d;
+}
+
+.srvttl h1 {
+  color: #6e473b;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+.srvttl p {
+  font-family: "Nunito", sans-serif;
+}
+.srvttl h4 {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+.service {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  border-radius: 1rem;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #8e7054;
+  color: black;
+}
+
+.service img {
+  transition: transform 0.5s ease;
+}
+
+.service:hover img {
+  transform: scale(1.1);
+}
+
+.abct3 {
+  padding: 4rem;
+  background-color: #f5f3f3;
+}
+.insta-icon {
+  background-color: #8e7054;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.c1:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+/* ABOUT PAGE */
+
+/* SHOP PAGE */
+.nav-shop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  background-color: #fff; /* Add a background color to avoid content overlap */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+.cnt-hero-shop {
+  margin-top: 6.7rem;
+}
+.sidebar-shop {
+  border: 1px solid #b5b5b5;
+  background-color: #fff;
+  border-radius: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  max-height: 48rem !important; /* Ensure max height depends on its elements */
+  box-shadow: 0 0 10px #0000001a;
+}
+.sidebar-shop h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3rem !important;
+}
+.filter-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+}
+.custom-gap-shop {
+  gap: 10rem;
+}
+
+.custom-size-label {
+  font-family: "Impact", sans-serif !important;
+  margin: 0.5rem !important; /* Add gaps between buttons */
+  background-color: #b5b5b5 !important; /* Default color */
+  color: white !important;
+  border: 1px solid #b5b5b5 !important;
+  border-radius: 2rem !important; /* Small rounded corners */
+  padding: 0.5rem 1.3rem !important; /* Small button size */
+  cursor: pointer;
+  font-size: 1rem !important;
+  transition: background-color 0.3s, color 0.3s !important; /* Smooth transition */
+}
+.custom-size-label:hover {
+  background-color: #363636 !important; /* Color on hover */
+}
+.custom-size-btn:checked + .custom-size-label {
+  background-color: black !important; /* Color when selected */
+  border-color: black !important;
+}
+.PS2-title {
+  font-family: Impact, sans-serif;
+  font-size: 3.5rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pagination-btn.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.pagination-btn:hover {
+  background-color: #f0f0f0;
+}
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.3rem 0.6rem;
+  font-size: 12px;
+  font-weight: bold;
+}
+.btn.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+.empty-cart {
+  text-align: center;
+  color: #6c757d;
+}
+
+.empty-cart h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+table img {
+  max-width: 50px;
+  border-radius: 8px;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+.custom-cart-action {
+  margin-top: 2.3rem;
+}
+.heart-img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0; /* Initially hidden */
+}
+
+.card:hover .heart-img {
+  opacity: 1; /* Show on hover */
+}
+/* SHOP PAGE */

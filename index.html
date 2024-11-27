@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bey&Bey</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="index-page">
+    <!-- NAVBAR -->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg py-2">
+          <div class="container-fluid">
+            <a
+              class="navbar-brand d-flex align-items-center"
+              href="./index.html"
+              ><img
+                src="./img/beygif.gif"
+                class="img-fluid"
+                style="max-height: 5rem"
+                alt="Logo"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse nav-underline"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                <li class="nav-item">
+                  <a
+                    class="nav-link px-3 text-dark fs-5 text active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3 fs-5 text" href="./shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link px-3 text-dark fs-5 text"
+                    href="./About.html"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link px-3 text-dark fs-5 text"
+                    href="./Contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <div class="d-flex align-items-center gap-5">
+                <a href="#" class="d-flex">
+                  <img
+                    src="./img/search.png"
+                    alt="Search"
+                    class="img-fluid"
+                    style="height: 20px"
+                  />
+                </a>
+                <a href="#" class="d-flex">
+                  <img
+                    src="./img/heart.png"
+                    alt="Wishlist"
+                    class="img-fluid"
+                    style="height: 20px"
+                  />
+                </a>
+                <a href="./cart.html" class="d-flex">
+                  <img
+                    src="./img/shopping-bag.png"
+                    alt="Cart"
+                    class="img-fluid"
+                    style="height: 20px"
+                  />
+                </a>
+                <!-- <div class="price fw-bold bg-primary">$0.00</div> -->
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- NAVBAR -->
+
+    <!-- HERO SECTION -->
+    <div class="Hero-section">
+      <h1 class="mb-3 mt-5">
+        Stay Ahead of the Trend with Our Latest <br />
+        Collection!
+      </h1>
+      <p class="mb-5">
+        Explore our diverse collection of meticulously crafted garments,
+        designed to highlight <br />
+        your individuality and cater to your unique sense of style.
+      </p>
+      <a href="./shop.html">
+        <button class="px-5 py-2">Shop Now</button>
+      </a>
+    </div>
+    <!-- HERO SECTION  -->
+
+    <!-- Filter Buttons -->
+    <div class="bg-body-secondary p-3 my-5">
+      <div class="filters">
+        <button class="filter-btn filters-btn-home" data-type="new">
+          New Arrivals
+        </button>
+        <button class="filter-btn filters-btn-home" data-type="sale">
+          Hot Sales
+        </button>
+        <button class="filter-btn filters-btn-home" data-type="best">
+          Best Sellers
+        </button>
+        <!-- <button class="filter-btn" data-type="">All</button> -->
+        <!-- Show all items -->
+      </div>
+
+      <!-- PRODUCT SECTION -->
+      <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-4 g-4"></div>
+      </div>
+      <!-- PRODUCT SECTION -->
+      <a
+        href="./Shop.html"
+        class="d-flex justify-content-center"
+        style="text-decoration: none"
+      >
+        <button
+          class="filter-btn filters-btn-home text-center"
+          data-type="best"
+        >
+          GO TO SHOP NOW
+        </button></a
+      >
+    </div>
+    <!-- BADGE SECTION -->
+    <div class="container-fluid p-5 my-5 bg-body-secondary">
+      <div class="row row-cols-1 row-cols-md-3 text-center fw-medium fs-5 tyu">
+        <div class="col col-md-4">
+          <img src="./img/refresh.png" alt="" />
+          <p class="mt-4">7 DT Shipping & Returns</p>
+        </div>
+        <div class="col col-md-4">
+          <img src="./img/secure.png" alt="" />
+          <p class="mt-4">Secure payments</p>
+        </div>
+        <div class="col col-md-4">
+          <img src="./img/service.png" alt="" />
+          <p class="mt-4">Service clients</p>
+        </div>
+      </div>
+    </div>
+    <!-- BADGE SECTION -->
+
+    <!-- FEATURED PRODUCT -->
+    <section class="featured-product my-5 p-3">
+      <div class="container w-50">
+        <h2>Featured Product</h2>
+        <div class="product-card">
+          <img
+            src="./img/t shirts/vintage 23 beyboi tee.png"
+            class="product-img"
+            alt="Admis Blue Tee"
+          />
+          <div class="product-info">
+            <h5 class="product-title">vintage 23 beyboi tee</h5>
+            <p class="product-price">92.9 DT</p>
+            <p class="product-description">
+              This is a high-quality vintage tee that is perfect for any
+              occasion.
+            </p>
+            <button class="buy-now-btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT INFORMATION -->
+    <!-- <section class="contact-info">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Email: contact@beyandbey.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Fashion Street, Tunis, Tunisia</p>
+      </div>
+    </section> -->
+
+    <!-- NEWSLETTER SIGNUP -->
+    <section class="newsletter mt-5">
+      <div class="container">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest updates and offers.</p>
+        <form>
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start text-white">
+      <section class="p-3">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">
+                <img
+                  class="imgfooter"
+                  src="./img/Untitled-2-01.png"
+                  alt="logof"
+                />
+              </h6>
+              <hr class="mb-3 mt-0 d-inline-block mx-auto hrf1" />
+              <p class="flinks">
+                Complete your style with awesome clothes from us.
+              </p>
+              <h5 class="text-center sm">Social Media</h5>
+              <div
+                class="d-flex justify-content-center align-items-center gap-3"
+              >
+                <a href=""><img src="./img/FACEBOOK.png" /></a>
+                <a href=""><img src="./img/instagram.png" /></a>
+                <a href=""><img src="./img/tktk.png" /></a>
+              </div>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Company</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto hrf1" />
+              <p>
+                <a href="./index.html" class="flinks">Home Page</a>
+              </p>
+              <p>
+                <a href="/Shop.html" class="flinks">Shopping Page</a>
+              </p>
+              <p>
+                <a href="/About.html" class="flinks">About Us</a>
+              </p>
+              <p>
+                <a href="/Contact.html" class="flinks">Contact Us</a>
+              </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Quick Link</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto hrf1" />
+              <p>
+                <a href="#!" class="flinks">Share Location</a>
+              </p>
+              <p>
+                <a href="#!" class="flinks">Orders Tracking</a>
+              </p>
+              <p>
+                <a href="#!" class="flinks">Size Guide</a>
+              </p>
+              <p>
+                <a href="#!" class="flinks">FAQs</a>
+              </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold">Legal</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto hrf1" />
+              <p>
+                <a href="#!" class="flinks">Terms & conditions</a>
+              </p>
+              <p>
+                <a href="#!" class="flinks">Privacy Policy</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+      <div class="text-center pb-4 pt-2 copyright">
+        Copyright © 2025 ALL RIGHT RESERVED | Bey&Bey made by Baha
+      </div>
+    </footer>
+    <!-- FOOTER -->
+    <!-- Wishlist Modal -->
+    <div
+      class="modal fade"
+      id="wishlistModal"
+      tabindex="-1"
+      aria-labelledby="wishlistModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="wishlistModalLabel">Wishlist</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="wishlistModalBody">
+            <!-- Wishlist items will be dynamically inserted here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/common.js"></script>
+  </body>
+</html>
