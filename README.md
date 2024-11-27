@@ -2,6 +2,7 @@
 
 ## Summary
 A responsive clothing store built using HTML, CSS, JavaScript, and Bootstrap. Includes features like a shopping cart, wishlist, and checkout system.
+- **Live Demo**: https://yngjesus.github.io/clothing-store/
 
 ## Features
 
@@ -24,3 +25,8 @@ A responsive clothing store built using HTML, CSS, JavaScript, and Bootstrap. In
 - CSS3
 - JavaScript
 - Bootstrap
+
+## Author
+**Baha Jdidi**
+- **Linkedin**: https://www.linkedin.com/in/bahaeddinejdidi/
+- **Email**: bahajedidi2016@gmail.com
