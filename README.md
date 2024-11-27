@@ -1,6 +1,7 @@
-# Clothing Store
+# Clothing Store E-Commerce Website - Baha Jdidi
 
-A simple, responsive clothing store website built using HTML, CSS, JavaScript, and Bootstrap.
+## Summary
+A responsive clothing store built using HTML, CSS, JavaScript, and Bootstrap. Includes features like a shopping cart, wishlist, and checkout system.
 
 ## Features
 
