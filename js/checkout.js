@@ -53,17 +53,19 @@ document.addEventListener("DOMContentLoaded", () => {
   // Render the order summary on page load
   renderOrderSummary();
 });
-document
-  .getElementById("checkout-form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the default form submission
+const checkoutForm = document.getElementById("checkout-form");
+const placeOrderButton = document.querySelector("button[type='submit']");
 
-    // Simple confirmation alert
+placeOrderButton.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  if (checkoutForm.checkValidity()) {
     alert("Thank you for your order! Your order has been placed successfully.");
 
-    // Optionally, you can clear the form
-    event.target.reset();
+    checkoutForm.reset();
 
-    // Redirect to the homepage
     window.location.href = "./index.html";
-  });
+  } else {
+    checkoutForm.reportValidity();
+  }
+});
