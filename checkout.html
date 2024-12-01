@@ -110,9 +110,9 @@
     <!-- NAVBAR -->
     <div class="container my-5">
       <div class="row">
-        <div class="col-md-8 bg-body-tertiary p-5 rounded-5">
+        <div class="col-md-8 bg-body-tertiary p-5 checkout-bgleft">
           <h4 class="mb-3">Billing Information</h4>
-          <form id="checkout-form">
+          <form class="frmckt" id="checkout-form">
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="firstName" class="form-label">First Name</label>
@@ -120,6 +120,7 @@
                   type="text"
                   class="form-control"
                   id="firstName"
+                  placeholder="Bey"
                   required
                 />
               </div>
@@ -128,6 +129,7 @@
                 <input
                   type="text"
                   class="form-control"
+                  placeholder="&Bey"
                   id="lastName"
                   required
                 />
@@ -135,34 +137,74 @@
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email Address</label>
-              <input type="email" class="form-control" required />
+              <input
+                type="email"
+                class="form-control"
+                placeholder="BeyandBey@gmail.com"
+                required
+              />
             </div>
             <div class="mb-3">
               <label for="address" class="form-label">Address</label>
-              <input type="text" class="form-control" id="address" required />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Rue BeyBenBey N2"
+                id="address"
+                required
+              />
             </div>
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="city" class="form-label">City</label>
-                <input type="text" class="form-control" id="city" required />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Riadh"
+                  id="city"
+                  required
+                />
               </div>
               <div class="col-md-3 mb-3">
                 <label for="state" class="form-label">State</label>
-                <input type="text" class="form-control" id="state" required />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Sousse"
+                  id="state"
+                  required
+                />
               </div>
               <div class="col-md-3 mb-3">
                 <label for="zip" class="form-label">Zip Code</label>
-                <input type="text" class="form-control" id="zip" required />
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="4023"
+                  id="zip"
+                  required
+                />
               </div>
             </div>
             <div class="mb-3">
               <label for="cardName" class="form-label">Name on Card</label>
-              <input type="text" class="form-control" id="cardName" required />
-            </div>
-            <div class="mb-3">
-              <label for="cardNumber" class="form-label">Card Number</label>
               <input
                 type="text"
+                class="form-control"
+                placeholder="Bey Boi"
+                id="cardName"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label
+                for="cardNumber"
+                placeholder="1234 5678 9123 4567"
+                class="form-label"
+                >Card Number</label
+              >
+              <input
+                type="number"
                 class="form-control"
                 id="cardNumber"
                 required
@@ -181,29 +223,34 @@
               </div>
               <div class="col-md-6 mb-3">
                 <label for="cardCVC" class="form-label">CVC</label>
-                <input type="text" class="form-control" id="cardCVC" required />
+                <input
+                  type="number"
+                  placeholder="123"
+                  class="form-control"
+                  id="cardCVC"
+                  required
+                />
               </div>
             </div>
-            <button
-              type="submit"
-              class="btn"
-              style="background-color: #8e7054; color: white; width: 100%"
-            >
-              Place Order
-            </button>
           </form>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 checkout-bg p-3">
           <!-- Order Summary -->
-          <h4 class="mb-3">Order Summary</h4>
+          <h4 class="mb-3 mt-4">Order Summary</h4>
           <ul id="order-summary" class="list-group mb-3">
             <!-- Dynamic content will be inserted here -->
           </ul>
+          <button
+            type="submit"
+            class="btn"
+            style="background-color: #8e7054; color: white; width: 100%"
+          >
+            Place Order
+          </button>
         </div>
       </div>
     </div>
-
     <!-- FOOTER -->
     <footer class="text-center text-lg-start text-white">
       <section class="p-3">

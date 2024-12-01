@@ -694,4 +694,30 @@ table img {
   margin: 3px;
 }
 
+.checkout-bg {
+  border: 1px solid rgb(146, 145, 145);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.checkout-bg h4 {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: bold !important;
+  font-size: 2rem !important;
+}
+.checkout-bgleft {
+  border-left: 1px solid rgb(146, 145, 145);
+  border-top: 1px solid rgb(146, 145, 145);
+  border-bottom: 1px solid rgb(146, 145, 145);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.checkout-bgleft h4 {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: bold !important;
+  font-size: 2.2rem !important;
+  margin-bottom: 2rem !important;
+}
+.frmckt .form-label {
+  font-family: "Nunito", sans-serif;
+  /* font-size: 1.2rem; */
+  font-weight: bold;
+}
 /* SHOP PAGE */
