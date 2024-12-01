@@ -1,24 +1,23 @@
-// Array of products
 const products = [
   {
     name: "Admis blue tee",
     price: 73.9,
     currency: "DT",
     image: "img/t shirts/Admis blue tee.png",
-    type: "new",
+    type: "best",
     category: "tshirts",
-    availability: "inStock",
-    size: "S",
+    availability: "outOfStock",
+    size: ["M", "L"],
   },
   {
     name: "Admis pink tee",
     price: 73.9,
     currency: "TND",
     image: "img/t shirts/Admis pink tee.png",
-    type: "sale",
+    type: "new",
     category: "tshirts",
     availability: "inStock",
-    size: "L",
+    size: ["S", "M", "XL"],
   },
   {
     name: "asrar alghaz tee black",
@@ -27,28 +26,28 @@ const products = [
     image: "img/t shirts/asrar alghaz tee black.png",
     type: "sale",
     category: "tshirts",
-    availability: "outOfStock",
-    size: "S",
+    availability: "inStock",
+    size: ["XS", "S"],
   },
   {
     name: "asrar alghaz tee white",
     price: 78.9,
     currency: "DT",
     image: "img/t shirts/asrar alghaz tee white.png",
-    type: "best",
+    type: "sale",
     category: "tshirts",
-    availability: "inStock",
-    size: "XL",
+    availability: "outOfStock",
+    size: ["M", "L"],
   },
   {
     name: "Vintage 23 beygurl tee",
     price: 92.9,
     currency: "DT",
     image: "img/t shirts/vintage 23 beygurl tee.png",
-    type: "best",
+    type: "new",
     category: "tshirts",
     availability: "inStock",
-    size: "XL",
+    size: ["XS", "S", "M"],
   },
   {
     name: "vintage 23 beyboi tee",
@@ -57,28 +56,28 @@ const products = [
     image: "img/t shirts/vintage 23 beyboi tee.png",
     type: "best",
     category: "tshirts",
-    availability: "inStock",
-    size: "XL",
+    availability: "outOfStock",
+    size: ["L", "XL"],
   },
   {
     name: "dream astronaut club tee yellow",
     price: 78.9,
     currency: "DT",
     image: "img/t shirts/dream astronaut club tee yellow.png",
-    type: "best",
+    type: "new",
     category: "tshirts",
     availability: "inStock",
-    size: "XL",
+    size: ["M"],
   },
   {
     name: "asrar",
     price: 78.9,
     currency: "DT",
     image: "img/t shirts/asrar.png",
-    type: "best",
+    type: "sale",
     category: "tshirts",
-    availability: "inStock",
-    size: "XL",
+    availability: "outOfStock",
+    size: ["S", "L"],
   },
   {
     name: "dream astronaut club tee pink",
@@ -88,17 +87,137 @@ const products = [
     type: "best",
     category: "tshirts",
     availability: "inStock",
-    size: "XL",
+    size: ["XS", "M"],
   },
   {
     name: "Bey Jorts",
     price: 78.9,
     currency: "DT",
     image: "img/t shirts/Bey Jorts.png",
-    type: "best",
+    type: "new",
     category: "shorts",
     availability: "inStock",
-    size: "XL",
+    size: ["M", "L"],
+  },
+  {
+    name: "Evidence Hoodie Brown",
+    price: 133,
+    currency: "DT",
+    image: "img/t shirts/hoodie-brown.png",
+    type: "sale",
+    category: "hoodies",
+    availability: "outOfStock",
+    size: ["S", "M", "L"],
+  },
+  {
+    name: "Evidence Hoodie Gray",
+    price: 133,
+    currency: "DT",
+    image: "img/t shirts/hoodie-gray.png",
+    type: "best",
+    category: "hoodies",
+    availability: "inStock",
+    size: ["L", "XL"],
+  },
+  {
+    name: "Evidence Hoodie Pink",
+    price: 133,
+    currency: "DT",
+    image: "img/t shirts/hoodie-pink.png",
+    type: "new",
+    category: "hoodies",
+    availability: "inStock",
+    size: ["M", "L"],
+  },
+  {
+    name: "Evidence Hoodie Purple",
+    price: 133,
+    currency: "DT",
+    image: "img/t shirts/hoodie-purple.png",
+    type: "sale",
+    category: "hoodies",
+    availability: "inStock",
+    size: ["S", "M"],
+  },
+  {
+    name: "Evidence Hoodie Cyan",
+    price: 133,
+    currency: "DT",
+    image: "img/t shirts/hoodie-cyan.png",
+    type: "new",
+    category: "hoodies",
+    availability: "outOfStock",
+    size: ["M", "L", "XL"],
+  },
+  {
+    name: "Evidence Pants Brown",
+    price: 100,
+    currency: "DT",
+    image: "img/t shirts/pants-brown.png",
+    type: "best",
+    category: "pants",
+    availability: "inStock",
+    size: ["S", "M"],
+  },
+  {
+    name: "Evidence Pants Gray",
+    price: 100,
+    currency: "DT",
+    image: "img/t shirts/pants-gray.png",
+    type: "sale",
+    category: "pants",
+    availability: "outOfStock",
+    size: ["M"],
+  },
+  {
+    name: "Evidence Pants Pink",
+    price: 100,
+    currency: "DT",
+    image: "img/t shirts/pants-pink.png",
+    type: "new",
+    category: "pants",
+    availability: "inStock",
+    size: ["M", "L", "XL"],
+  },
+  {
+    name: "Evidence Pants Purple",
+    price: 100,
+    currency: "DT",
+    image: "img/t shirts/pants-purple.png",
+    type: "sale",
+    category: "pants",
+    availability: "outOfStock",
+    size: ["S", "L"],
+  },
+  {
+    name: "Evidence Pants Cyan",
+    price: 100,
+    currency: "DT",
+    image: "img/t shirts/pants-cyan.png",
+    type: "best",
+    category: "pants",
+    availability: "inStock",
+    size: ["XS", "M"],
+  },
+  {
+    name: "FBEYI Hoodie Black",
+    price: 123,
+    currency: "DT",
+    image: "img/t shirts/hoodie-fbi-black.png",
+    type: "new",
+    category: "hoodies",
+    availability: "outOfStock",
+    size: ["M", "L", "XL"],
+  },
+  {
+    name: "FBEYI Hoodie Dark Blue",
+    price: 123,
+    currency: "DT",
+    image: "img/t shirts/hoodie-fbi-dblue.png",
+    type: "sale",
+    category: "hoodies",
+    availability: "inStock",
+    size: ["XS", "S", "M"],
   },
 ];
 
@@ -192,6 +311,38 @@ if (document.body.id === "about-page") {
         "https://www.instagram.com/p/CkSsgd2o6i6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       ];
       window.open(urls[index], "_blank");
+    });
+  });
+}
+if (document.body.id === "contact-page") {
+  document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.querySelector("form");
+
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const nameInput = contactForm.querySelector("#name");
+      const emailInput = contactForm.querySelector("#email");
+      const phoneInput = contactForm.querySelector("#phone");
+      const messageInput = contactForm.querySelector("#message");
+
+      const name = nameInput.value;
+      const email = emailInput.value;
+      const phone = phoneInput.value;
+      const message = messageInput.value;
+
+      if (name && email && phone && message) {
+        alert(
+          `Thank you for contacting us, ${name}! We will respond to your message soon.`
+        );
+        nameInput.value = "";
+        emailInput.value = "";
+        phoneInput.value = "";
+        messageInput.value = "";
+      } else {
+        alert("Please fill out all fields.");
+      }
+      window.location.href = "./index.html";
     });
   });
 }

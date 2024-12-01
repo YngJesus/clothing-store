@@ -337,18 +337,18 @@ button img {
 }
 
 .buy-now-btn {
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #8e7054;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 10px 20px !important;
+  font-size: 1rem !important;
+  color: #fff !important;
+  background-color: #8e7054 !important;
+  border: none !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s ease !important;
 }
 
 .buy-now-btn:hover {
-  background-color: #6e473b;
+  background-color: #6e473b !important;
 }
 /* CONTACT INFORMATION */
 .contact-info {
@@ -671,4 +671,27 @@ table img {
 .card:hover .heart-img {
   opacity: 1; /* Show on hover */
 }
+
+.card-shop {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card-shop:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.card-shop .badge {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 3px;
+}
+
 /* SHOP PAGE */

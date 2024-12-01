@@ -4,20 +4,20 @@ const products = [
     price: 73.9,
     currency: "DT",
     image: "img/t shirts/Admis blue tee.png",
-    type: "new",
+    type: "best",
     category: "tshirts",
-    availability: "inStock",
-    size: "S",
+    availability: "outOfStock",
+    size: ["M", "L"],
   },
   {
     name: "Admis pink tee",
     price: 73.9,
     currency: "TND",
     image: "img/t shirts/Admis pink tee.png",
-    type: "sale",
+    type: "new",
     category: "tshirts",
     availability: "inStock",
-    size: "L",
+    size: ["S", "M", "XL"],
   },
   {
     name: "asrar alghaz tee black",
@@ -26,28 +26,28 @@ const products = [
     image: "img/t shirts/asrar alghaz tee black.png",
     type: "sale",
     category: "tshirts",
-    availability: "outOfStock",
-    size: "S",
+    availability: "inStock",
+    size: ["XS", "S"],
   },
   {
     name: "asrar alghaz tee white",
     price: 78.9,
     currency: "DT",
     image: "img/t shirts/asrar alghaz tee white.png",
-    type: "best",
+    type: "sale",
     category: "tshirts",
-    availability: "inStock",
-    size: "XL",
+    availability: "outOfStock",
+    size: ["M", "L"],
   },
   {
     name: "Vintage 23 beygurl tee",
     price: 92.9,
     currency: "DT",
     image: "img/t shirts/vintage 23 beygurl tee.png",
-    type: "best",
+    type: "new",
     category: "tshirts",
     availability: "inStock",
-    size: "XL",
+    size: ["XS", "S", "M"],
   },
   {
     name: "vintage 23 beyboi tee",
@@ -56,28 +56,28 @@ const products = [
     image: "img/t shirts/vintage 23 beyboi tee.png",
     type: "best",
     category: "tshirts",
-    availability: "inStock",
-    size: "XL",
+    availability: "outOfStock",
+    size: ["L", "XL"],
   },
   {
     name: "dream astronaut club tee yellow",
     price: 78.9,
     currency: "DT",
     image: "img/t shirts/dream astronaut club tee yellow.png",
-    type: "best",
+    type: "new",
     category: "tshirts",
     availability: "inStock",
-    size: "XL",
+    size: ["M"],
   },
   {
     name: "asrar",
     price: 78.9,
     currency: "DT",
     image: "img/t shirts/asrar.png",
-    type: "best",
+    type: "sale",
     category: "tshirts",
-    availability: "inStock",
-    size: "XL",
+    availability: "outOfStock",
+    size: ["S", "L"],
   },
   {
     name: "dream astronaut club tee pink",
@@ -87,27 +87,137 @@ const products = [
     type: "best",
     category: "tshirts",
     availability: "inStock",
-    size: "XL",
+    size: ["XS", "M"],
   },
   {
     name: "Bey Jorts",
     price: 78.9,
     currency: "DT",
     image: "img/t shirts/Bey Jorts.png",
-    type: "best",
+    type: "new",
     category: "shorts",
     availability: "inStock",
-    size: "XL",
+    size: ["M", "L"],
   },
   {
     name: "Evidence Hoodie Brown",
     price: 133,
     currency: "DT",
-    image: "img/t shirts/hoodie1.png",
+    image: "img/t shirts/hoodie-brown.png",
+    type: "sale",
+    category: "hoodies",
+    availability: "outOfStock",
+    size: ["S", "M", "L"],
+  },
+  {
+    name: "Evidence Hoodie Gray",
+    price: 133,
+    currency: "DT",
+    image: "img/t shirts/hoodie-gray.png",
     type: "best",
     category: "hoodies",
     availability: "inStock",
-    size: "L",
+    size: ["L", "XL"],
+  },
+  {
+    name: "Evidence Hoodie Pink",
+    price: 133,
+    currency: "DT",
+    image: "img/t shirts/hoodie-pink.png",
+    type: "new",
+    category: "hoodies",
+    availability: "inStock",
+    size: ["M", "L"],
+  },
+  {
+    name: "Evidence Hoodie Purple",
+    price: 133,
+    currency: "DT",
+    image: "img/t shirts/hoodie-purple.png",
+    type: "sale",
+    category: "hoodies",
+    availability: "inStock",
+    size: ["S", "M"],
+  },
+  {
+    name: "Evidence Hoodie Cyan",
+    price: 133,
+    currency: "DT",
+    image: "img/t shirts/hoodie-cyan.png",
+    type: "new",
+    category: "hoodies",
+    availability: "outOfStock",
+    size: ["M", "L", "XL"],
+  },
+  {
+    name: "Evidence Pants Brown",
+    price: 100,
+    currency: "DT",
+    image: "img/t shirts/pants-brown.png",
+    type: "best",
+    category: "pants",
+    availability: "inStock",
+    size: ["S", "M"],
+  },
+  {
+    name: "Evidence Pants Gray",
+    price: 100,
+    currency: "DT",
+    image: "img/t shirts/pants-gray.png",
+    type: "sale",
+    category: "pants",
+    availability: "outOfStock",
+    size: ["M"],
+  },
+  {
+    name: "Evidence Pants Pink",
+    price: 100,
+    currency: "DT",
+    image: "img/t shirts/pants-pink.png",
+    type: "new",
+    category: "pants",
+    availability: "inStock",
+    size: ["M", "L", "XL"],
+  },
+  {
+    name: "Evidence Pants Purple",
+    price: 100,
+    currency: "DT",
+    image: "img/t shirts/pants-purple.png",
+    type: "sale",
+    category: "pants",
+    availability: "outOfStock",
+    size: ["S", "L"],
+  },
+  {
+    name: "Evidence Pants Cyan",
+    price: 100,
+    currency: "DT",
+    image: "img/t shirts/pants-cyan.png",
+    type: "best",
+    category: "pants",
+    availability: "inStock",
+    size: ["XS", "M"],
+  },
+  {
+    name: "FBEYI Hoodie Black",
+    price: 123,
+    currency: "DT",
+    image: "img/t shirts/hoodie-fbi-black.png",
+    type: "new",
+    category: "hoodies",
+    availability: "outOfStock",
+    size: ["M", "L", "XL"],
+  },
+  {
+    name: "FBEYI Hoodie Dark Blue",
+    price: 123,
+    currency: "DT",
+    image: "img/t shirts/hoodie-fbi-dblue.png",
+    type: "sale",
+    category: "hoodies",
+    availability: "inStock",
+    size: ["XS", "S", "M"],
   },
 ];
 
@@ -139,8 +249,10 @@ function renderProducts(page) {
     const card = document.createElement("div");
     card.className = "col";
     card.innerHTML = `
-        <div class="card no-border position-relative">
-          <img
+        <div class="card no-border position-relative card-shop">
+          <span class="badge bg-danger position-absolute rounded-5 top-0 start-0 m-3">${
+            product.availability === "outOfStock" ? "Sold Out" : ""
+          }</span>          <img
             src="${product.image}"
             class="card-img-top img-bg rounded-5"
             alt="${product.name}"
@@ -230,10 +342,11 @@ function filterProducts() {
     (checkbox) => checkbox.value
   );
 
-  const sizeCheckboxes = document.querySelectorAll(".custom-size-btn:checked");
-  const selectedSizes = Array.from(sizeCheckboxes).map(
-    (checkbox) => checkbox.value
-  );
+  const sizeCheckboxes = document.querySelectorAll(".custom-size-btn");
+
+  const selectedSizes = Array.from(sizeCheckboxes)
+    .filter((checkbox) => checkbox.checked)
+    .map((checkbox) => checkbox.value);
 
   filteredProducts = products
     .filter(
@@ -248,11 +361,13 @@ function filterProducts() {
     )
     .filter(
       (product) =>
-        selectedSizes.length === 0 || selectedSizes.includes(product.size)
+        selectedSizes.length === 0 ||
+        product.size.some((size) => selectedSizes.includes(size)) // Check if any selected size matches the product sizes
     )
     .filter((product) => product.price <= maxPrice);
 
   sortProducts();
+
   currentPage = 1; // Reset to page 1 after filtering
   renderProducts(currentPage);
 }
