@@ -439,13 +439,32 @@ function addToCart(product) {
 
 // Function to add/remove a product from the wishlist
 function addToWish(product) {
+  const alertContainer = document.getElementById("alert-container");
+
+  function showAlert(message, type) {
+    const alert = document.createElement("div");
+    alert.className = `alert alert-${type} alert-dismissible fade show`;
+    alert.role = "alert";
+    alert.innerHTML = `
+      ${message}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    `;
+    alertContainer.appendChild(alert);
+
+    // Automatically remove the alert after 3 seconds
+    setTimeout(() => {
+      alert.classList.remove("show");
+      alert.addEventListener("transitionend", () => alert.remove());
+    }, 3000);
+  }
+
   const index = wish.findIndex((item) => item.name === product.name);
   if (index !== -1) {
     wish.splice(index, 1);
-    alert(`${product.name} has been removed from your wishlist!`);
+    showAlert(`${product.name} has been removed from your wishlist!`, "danger");
   } else {
     wish.push(product);
-    alert(`${product.name} has been added to your wishlist!`);
+    showAlert(`${product.name} has been added to your wishlist!`, "success");
   }
   localStorage.setItem("wish", JSON.stringify(wish));
   updateWishIcon();
