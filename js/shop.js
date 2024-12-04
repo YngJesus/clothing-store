@@ -461,6 +461,13 @@ function createBadge(count, type) {
     font-weight: bold;
   `;
   badge.innerText = count;
+
+  if (type === "cart") {
+    badge.addEventListener("click", function () {
+      window.location.href = "./cart.html";
+    });
+  }
+
   return badge;
 }
 

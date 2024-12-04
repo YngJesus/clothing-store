@@ -26,10 +26,18 @@ document.addEventListener("DOMContentLoaded", () => {
       badge.innerText = cart.length;
       const cartIcon = document.querySelector('.navbar img[alt="Cart"]');
       cartIcon.parentNode.appendChild(badge);
+
+      // Add click event listener to the cart icon
+      cartIcon.parentNode.addEventListener("click", function () {
+        window.location.href = "./cart.html";
+      });
     } else {
       cartBadge.innerText = cart.length;
     }
   }
+
+  // Call the function to update the cart icon
+  updateCartIcon();
 
   function updateWishIcon() {
     // Add a dynamic badge or update its content
