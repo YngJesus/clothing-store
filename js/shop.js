@@ -407,13 +407,33 @@ const wishIcon = document.querySelector('.navbar img[alt="Wishlist"]');
 
 // Function to add a product to the cart
 function addToCart(product) {
-  if (!cart.some((item) => item.name === product.name)) {
+  const alertContainer = document.getElementById("alert-container");
+
+  function showAlert(message, type) {
+    const alert = document.createElement("div");
+    alert.className = `alert alert-${type} alert-dismissible fade show`;
+    alert.role = "alert";
+    alert.innerHTML = `
+      ${message}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    `;
+    alertContainer.appendChild(alert);
+
+    setTimeout(() => {
+      alert.classList.remove("show");
+      alert.addEventListener("transitionend", () => alert.remove());
+    }, 3000);
+  }
+
+  if (product.availability === "outOfStock") {
+    showAlert(`${product.name} is out of stock.`, "danger");
+  } else if (!cart.some((item) => item.name === product.name)) {
     cart.push(product);
     localStorage.setItem("cart", JSON.stringify(cart));
     updateCartIcon();
-    alert(`${product.name} has been added to your cart!`);
+    showAlert(`${product.name} has been added to your cart!`, "success");
   } else {
-    alert("This item is already in the cart!");
+    showAlert("This item is already in the cart!", "warning");
   }
 }
 
