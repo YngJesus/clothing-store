@@ -63,6 +63,7 @@ placeOrderButton.addEventListener("click", function (event) {
     alert("Thank you for your order! Your order has been placed successfully.");
 
     checkoutForm.reset();
+    localStorage.removeItem("cart");
 
     window.location.href = "./index.html";
   } else {
