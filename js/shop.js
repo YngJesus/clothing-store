@@ -228,7 +228,7 @@ const itemsPerPage = 9;
 let currentPage = 1;
 let filteredProducts = products; // Initially, all products are shown
 let selectedAvailability = "all"; // Default availability filter
-let maxPrice = 1000; // Default max price
+let maxPrice = 1000;
 
 // Elements for price display
 const priceRangeInput = document.getElementById("priceRange");
@@ -396,7 +396,6 @@ document
     checkbox.addEventListener("change", filterProducts);
   });
 
-// Initial render
 renderProducts(currentPage);
 
 // CART PAGE
@@ -451,7 +450,6 @@ function addToWish(product) {
     `;
     alertContainer.appendChild(alert);
 
-    // Automatically remove the alert after 3 seconds
     setTimeout(() => {
       alert.classList.remove("show");
       alert.addEventListener("transitionend", () => alert.remove());

@@ -2,7 +2,7 @@
 
 function renderWishlistInModal() {
   const wishlistModalBody = document.getElementById("wishlistModalBody");
-  wishlistModalBody.innerHTML = ""; // Clear the modal body before adding new products
+  wishlistModalBody.innerHTML = "";
 
   if (wish.length === 0) {
     wishlistModalBody.innerHTML = "<p>Your wishlist is empty.</p>";
@@ -53,10 +53,10 @@ function removeFromWishlist(product) {
 // Event listener for the wishlist icon click
 wishIcon.addEventListener("click", () => {
   console.log("Wishlist icon clicked");
-  renderWishlistInModal(); // Populate the modal with wishlist products
+  renderWishlistInModal();
   const wishlistModal = new bootstrap.Modal(
     document.getElementById("wishlistModal")
   );
-  wishlistModal.show(); // Show the modal
+  wishlistModal.show();
   console.log("Modal should be shown");
 });

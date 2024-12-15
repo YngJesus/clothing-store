@@ -225,7 +225,7 @@ if (document.body.id === "index-page") {
   // Function to render products
   function renderProducts(products) {
     const productContainer = document.querySelector(".row");
-    productContainer.innerHTML = ""; // Clear previous products
+    productContainer.innerHTML = "";
 
     // Limit the number of products to 4
     const limitedProducts = products.slice(0, 4);
@@ -290,7 +290,7 @@ if (document.body.id === "index-page") {
 
       if (email) {
         alert(`Thank you for subscribing with ${email}!`);
-        emailInput.value = ""; // Clear the input field
+        emailInput.value = "";
       } else {
         alert("Please enter a valid email address.");
       }

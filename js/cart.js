@@ -1,52 +1,41 @@
-// Wait until the DOM content is fully loaded before running the script
 document.addEventListener("DOMContentLoaded", () => {
-  // Retrieve the cart data from localStorage, or initialize an empty array if not found
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  // Get references to DOM elements that will display the cart items and total price
   const cartItemsContainer = document.getElementById("cartItems");
   const cartTotal = document.getElementById("cartTotal");
   const checkoutButton = document.querySelector("#checkoutButtonEnd a");
 
-  // Function to enable/disable the checkout button based on whether the cart is empty or not
   function updateCheckoutButton() {
-    // If the cart is empty, disable the checkout button
     if (cart.length === 0) {
       checkoutButton.classList.add("disabled");
       checkoutButton.setAttribute("aria-disabled", "true");
     } else {
-      // Otherwise, enable the checkout button
       checkoutButton.classList.remove("disabled");
       checkoutButton.removeAttribute("aria-disabled");
     }
   }
 
-  // If the cart is empty, display a message and set the total to 0.00
   if (cart.length === 0) {
     cartItemsContainer.innerHTML =
       "<tr><td colspan='5'>Your cart is empty.</td></tr>";
     cartTotal.textContent = "Total: 0.00 DT";
-    updateCheckoutButton(); // Ensure the checkout button is updated correctly
+    updateCheckoutButton();
     return;
   }
 
-  // Function to render the cart items into the table
   function renderCart() {
-    // Clear the cart container before adding new content
     cartItemsContainer.innerHTML = "";
 
-    let total = 0; // Initialize total price to 0
+    let total = 0;
 
-    // Loop through each product in the cart and create a row for it
     cart.forEach((product, index) => {
-      // If a product does not have a quantity, set it to 1
       if (!product.quantity) {
         product.quantity = 1;
       }
 
       // Calculate the total price for this item
       const itemTotal = product.price * product.quantity;
-      total += itemTotal; // Add this item’s total to the overall cart total
+      total += itemTotal;
 
       // Create a new table row with product details
       const row = document.createElement("tr");
@@ -86,47 +75,44 @@ document.addEventListener("DOMContentLoaded", () => {
         </td>
       `;
 
-      // Append the newly created row to the cart items container
       cartItemsContainer.appendChild(row);
     });
 
     // Update the total price display
     cartTotal.textContent = `Total: ${total.toFixed(2)} DT`;
 
-    // Update the checkout button state after rendering the cart
     updateCheckoutButton();
   }
 
   // Event listener to handle quantity updates in the cart
   cartItemsContainer.addEventListener("input", (e) => {
-    // Check if the input element is a number (quantity input field)
     if (e.target.type === "number") {
-      const index = e.target.getAttribute("data-index"); // Get the index of the product being updated
-      cart[index].quantity = parseInt(e.target.value, 10); // Update the quantity in the cart array
-      localStorage.setItem("cart", JSON.stringify(cart)); // Save updated cart to localStorage
-      renderCart(); // Re-render the cart to reflect the changes
+      const index = e.target.getAttribute("data-index");
+      cart[index].quantity = parseInt(e.target.value, 10);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      x;
+      renderCart();
     }
   });
 
   // Event listener to handle item removal from the cart
   cartItemsContainer.addEventListener("click", (e) => {
-    // Check if the click event was on a remove button or image
     if (e.target.tagName === "BUTTON" || e.target.tagName === "IMG") {
-      const index = e.target.getAttribute("data-index"); // Get the index of the product to remove
-      cart.splice(index, 1); // Remove the item from the cart array
-      localStorage.setItem("cart", JSON.stringify(cart)); // Save the updated cart to localStorage
-      renderCart(); // Re-render the cart after removal
+      const index = e.target.getAttribute("data-index");
+      cart.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      renderCart();
     }
   });
 
   // Event listener to clear the entire cart
   document.getElementById("clearCart").addEventListener("click", () => {
-    localStorage.removeItem("cart"); // Remove the cart from localStorage
-    cart.length = 0; // Clear the cart array
-    renderCart(); // Re-render the cart to show it's empty
+    localStorage.removeItem("cart");
+    cart.length = 0;
+    renderCart();
   });
 
   // Initial render of the cart and button state
   renderCart();
-  updateCheckoutButton(); // Ensure checkout button is correctly updated on load
+  updateCheckoutButton();
 });

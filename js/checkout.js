@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Get the cart from localStorage
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
   const orderSummaryContainer = document.getElementById("order-summary");
 
   // Function to render the Order Summary
   function renderOrderSummary() {
-    orderSummaryContainer.innerHTML = ""; // Clear previous summary
+    orderSummaryContainer.innerHTML = "";
 
     if (cart.length === 0) {
       orderSummaryContainer.innerHTML = `
